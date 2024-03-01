@@ -30,10 +30,9 @@ mkdir SAPAI
 ``` bash
 >SAPAI~~~ID~~~gene~~~phage_name
 ```
-# Modify the sequences to match the specified format
-
-# The first line of the original fasta file looks like so
+# Modify the sequences to match this specified format
 ``` bash
+# The first line of the original fasta file looks like so
 >lcl|NC_003923.1_cds_WP_000361524.1_1 [locus_tag=MW_RS01930] [protein=Abi family protein] [protein_id=WP_000361524.1] [location=416307..417413] [gbkey=CDS]
 ```
 # Renaming the original fasta file
