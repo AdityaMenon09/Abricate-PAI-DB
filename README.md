@@ -5,7 +5,6 @@ The idea behind creating this database was to detect the presence of phages with
 
 ## Creating custom database in abricate:
 
-```bash
 # Create Environment
 conda create -n abricate -c bioconda
 
@@ -40,7 +39,7 @@ sed 's/lcl|NC_003923.1_cds_/SAPAI~~~/' NC_003923_P1_vSaα.txt | sed 's/\[gene=//
 # The first line of the modified fasta file should look like so:
 
 >SAPAI~~~WP_000361524.1_1~~~MW_RS01930~~~vSa_alpha [protein=Abi family protein] [protein_id=WP_000361524.1] [location=416307..417413] [gbkey=CDS]
- ``` bash
+
 
 # Concatenate Fasta Files
 cat *.fasta > sequences
