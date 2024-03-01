@@ -34,7 +34,7 @@ mkdir SAPAI
 
 sed 's/lcl|NC_003923.1_cds_/SAPAI~~~/' NC_003923_P1_vSaα.txt | sed 's/\[gene=//' |sed 's/\[locus_tag=//' | sed 's/]//' | sed 's/ /~~~/' | sed 's/ /~~~vSa_alpha /' > new/NC_003923_P1_vSa_alpha_new.fasta
 
-#**Note:** For phages with Greek alphabets (e.g., α) in their names, it's recommended to spell them out (e.g., alpha) while renaming the files and replace the alphabets with their spellings within the text file to avoid errors in the future.
+**Note:** For phages with Greek alphabets (e.g., α) in their names, it's recommended to spell them out (e.g., alpha) while renaming the files and replace the alphabets with their spellings within the text file to avoid errors in the future.
 
 # The first line of the modified fasta file should look like so:
 
