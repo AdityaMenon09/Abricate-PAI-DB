@@ -42,6 +42,8 @@ sed 's/lcl|NC_003923.1_cds_/SAPAI~~~/' NC_003923_P1_vSaα.txt | sed 's/\[gene=//
 
 
 # Concatenate Fasta Files
+```bash
+
 cat *.fasta > sequences
 
 # To remove the one line gap after concatenation between headers, you can use the following command:
