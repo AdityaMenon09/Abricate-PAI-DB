@@ -26,9 +26,8 @@ mkdir SAPAI
 ``` bash
 # Download fasta files from PAIDB and ensure they adhere to the following format
 >DB~~~ID~~~ACC~~~RESISTANCES DESC
-```
+
 # In our case, the required format was
-``` bash
 >SAPAI~~~ID~~~gene~~~phage_name
 ```
 # The original fasta file's first line appears as follows
