@@ -31,7 +31,7 @@ mkdir SAPAI
 ``` bash
 >SAPAI~~~ID~~~gene~~~phage_name
 ```
-# The first line of the original fasta file looks like so
+# The original fasta file's first line appears as follows
 
 ``` bash
 >lcl|NC_003923.1_cds_WP_000361524.1_1 [locus_tag=MW_RS01930] [protein=Abi family protein] [protein_id=WP_000361524.1] [location=416307..417413] [gbkey=CDS]
