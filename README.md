@@ -3,7 +3,7 @@ Using Abricate to detect phages from PAI database
 # Rationale
 The idea behind creating this database was to detect the presence of phages within our isolates of *Staphylococcus aureus* using the tool abricate. As abricate does not perform phage detection, we decided to create a database containing specific phage sequences from Pathogenicity Island Database ([PAIDB](http://www.paidb.re.kr/)) and used this database to detect phages present in our samples. The following SOP has been written to try and help anyone else trying to create a custom database like we did. For *S. aureus* phage related studies, the database we created can be used and by changing just a few details, one can successfully create their own phage database for any bacteria using the data from PAIDB and run it on abricate.
 
-## Creating custom database in abricate:
+### Creating custom database in abricate:
 ``` bash
 
 # Create Environment
