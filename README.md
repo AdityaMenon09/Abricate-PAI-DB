@@ -46,7 +46,7 @@ sed 's/lcl|NC_003923.1_cds_/SAPAI~~~/' NC_003923_P1_vSaα.txt | sed 's/\[gene=//
 ``` bash
 >SAPAI~~~WP_000361524.1_1~~~MW_RS01930~~~vSa_alpha [protein=Abi family protein] [protein_id=WP_000361524.1] [location=416307..417413] [gbkey=CDS]
 ```
-# Running the abricate using the database
+# Running abricate using the database
 ```bash
 # Concatenate the fasta files
 cat *.fasta > sequences
