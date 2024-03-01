@@ -14,7 +14,7 @@ conda activate abricate
 
 # Install abricate
 conda install -c conda-forge -c bioconda -c defaults abricate
-# Navigate to Abricate Database Folder
+# Navigate to abricate Database Folder
 cd /path/to/abricate/db
 
 # Create New Database Folder
@@ -48,20 +48,20 @@ sed 's/lcl|NC_003923.1_cds_/SAPAI~~~/' NC_003923_P1_vSaα.txt | sed 's/\[gene=//
 ```
 # Running the abricate using the database
 ```bash
-# Concatenate Fasta Files
+# Concatenate the fasta files
 cat *.fasta > sequences
 
 # To remove the one line gap after concatenation between headers, you can use the following command:
 sed -i '/^$/d' sequences
 
-# Copy Sequences into the db folder 
+# Copy the sequences file into the db folder 
 cp sequences /path/to/abricate/db/SAPAI
 
 # Setup and Run the Database
 # Activate abricate
 conda activate abricate
 
-# Setup the database
+# Setup the Database
 abricate --setupdb
 
 # Verify Database Addition
