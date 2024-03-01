@@ -7,7 +7,7 @@ The idea behind creating this database was to detect the presence of phages with
 ``` bash
 
 # Create Environment
-`conda create -n abricate -c bioconda`
+conda create -n abricate -c bioconda
 
 # Activate the environment
 conda activate abricate
@@ -19,6 +19,7 @@ cd /path/to/abricate/db
 
 # Create New Database Folder
 mkdir SAPAI
+```
 
 # Edit Fasta Files
 # Download fasta files from PAIDB and ensure they adhere to the following format:
@@ -32,19 +33,17 @@ mkdir SAPAI
 >lcl|NC_003923.1_cds_WP_000361524.1_1 [locus_tag=MW_RS01930] [protein=Abi family protein] [protein_id=WP_000361524.1] [location=416307..417413] [gbkey=CDS]
 
 # Next, we use the command below to edit the text file, rename it with “accession_phage_name_new.fasta”, storing it in a folder called “new” to achieve the above mentioned format:
-
-`sed 's/lcl|NC_003923.1_cds_/SAPAI~~~/' NC_003923_P1_vSaα.txt | sed 's/\[gene=//' |sed 's/\[locus_tag=//' | sed 's/]//' | sed 's/ /~~~/' | sed 's/ /~~~vSa_alpha /' > new/NC_003923_P1_vSa_alpha_new.fasta`
-
+```bash
+sed 's/lcl|NC_003923.1_cds_/SAPAI~~~/' NC_003923_P1_vSaα.txt | sed 's/\[gene=//' |sed 's/\[locus_tag=//' | sed 's/]//' | sed 's/ /~~~/' | sed 's/ /~~~vSa_alpha /' > new/NC_003923_P1_vSa_alpha_new.fasta
+```
 **Note:** For phages with Greek alphabets (e.g., α) in their names, it's recommended to spell them out (e.g., alpha) while renaming the files and replace the alphabets with their spellings within the text file to avoid errors in the future.
 
 # The first line of the modified fasta file should look like so:
 
 >SAPAI~~~WP_000361524.1_1~~~MW_RS01930~~~vSa_alpha [protein=Abi family protein] [protein_id=WP_000361524.1] [location=416307..417413] [gbkey=CDS]
 
-
-# Concatenate Fasta Files
 ```bash
-
+# Concatenate Fasta Files
 cat *.fasta > sequences
 
 # To remove the one line gap after concatenation between headers, you can use the following command:
@@ -56,7 +55,7 @@ cp sequences /path/to/abricate/db/SAPAI
 # Setup and Run the Database
 # Activate abricate
 conda activate abricate
-
+```
 # Setup the database
 abricate --setupdb
 
