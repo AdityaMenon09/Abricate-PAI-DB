@@ -14,6 +14,7 @@ conda activate abricate
 
 # Install abricate
 conda install -c conda-forge -c bioconda -c defaults abricate
+
 # Navigate to abricate Database Folder
 cd /path/to/abricate/db
 
