@@ -23,8 +23,8 @@ mkdir SAPAI
 ```
 
 # Editing Fasta Files
-# Download fasta files from PAIDB and ensure they adhere to the following format
 ``` bash
+# Download fasta files from PAIDB and ensure they adhere to the following format
 >DB~~~ID~~~ACC~~~RESISTANCES DESC
 ```
 # In our case, the required format was
