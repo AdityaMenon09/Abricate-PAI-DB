@@ -55,7 +55,7 @@ cp sequences /path/to/abricate/db/SAPAI
 # Setup and Run the Database
 # Activate abricate
 conda activate abricate
-```
+
 # Setup the database
 abricate --setupdb
 
@@ -64,4 +64,4 @@ abricate --list
 
 # Lastly, run your samples using the database you created
 abricate --db SAPAI sample.fasta
-
+```
